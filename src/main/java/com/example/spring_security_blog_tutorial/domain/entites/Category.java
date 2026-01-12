@@ -30,7 +30,6 @@ public class Category {
     @CreationTimestamp
     private LocalDateTime createdAt;
 
-
     @OneToMany(mappedBy = "category")
     List<Post> posts = new ArrayList<>();
 

@@ -29,7 +29,7 @@ public class Tag {
     @Column(nullable = false)
     @CreationTimestamp
     private LocalDateTime createdAt;
-    
+
     @ManyToMany(mappedBy = "tags")
     private Set<Post> posts = new HashSet<>();
 
